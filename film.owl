@@ -25,7 +25,16 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Animation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -42,6 +51,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Bide">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Blockbuster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Blockbuster">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -68,10 +93,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrastophe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrastophe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#CourtMétrage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#CourtMétrage">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Drame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Drame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -96,6 +145,36 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -137,6 +216,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosSuccès">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Historique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Historique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -185,16 +280,17 @@
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Muet -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Muet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#NombreDePrise -->
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Navet -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#NombreDePrise">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Navet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
     </owl:Class>
     
 
@@ -284,6 +380,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Son -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Son">
@@ -300,6 +404,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Ton -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton">
@@ -311,6 +423,14 @@
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Western">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
     
 
 
@@ -330,6 +450,28 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Blockbuster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrastophe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Drame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Historique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Muet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Navet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Western"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -359,10 +501,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#NombreDePrise"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
