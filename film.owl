@@ -21,6 +21,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Adolescent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adolescent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Animation -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Animation">
@@ -87,6 +103,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#But -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
@@ -117,6 +141,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#DePrévention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#DePrévention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Drame -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Drame">
@@ -133,6 +173,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux">
@@ -145,6 +193,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
     </owl:Class>
     
 
@@ -232,6 +288,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
     </owl:Class>
     
 
@@ -333,6 +397,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget">
@@ -352,6 +424,14 @@
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
     
 
 
@@ -376,6 +456,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
     </owl:Class>
     
 
