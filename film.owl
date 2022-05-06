@@ -97,6 +97,7 @@
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
     </owl:ObjectProperty>
