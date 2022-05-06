@@ -21,11 +21,52 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#NaPasPourBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#NaPasPourBudget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Requiert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Requiert">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
     </owl:ObjectProperty>
     
 
@@ -79,6 +120,7 @@
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
     </owl:ObjectProperty>
@@ -124,6 +166,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#neSePassePasDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#neSePassePasDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar">
@@ -137,6 +188,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
     </owl:ObjectProperty>
     
