@@ -1,0 +1,1982 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/cleme/ontologies/2022/film#"
+     xml:base="http://www.semanticweb.org/cleme/ontologies/2022/film"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aNombreDePrise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aNombreDePrise">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSucces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSucces">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#coute -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#coute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#coutePlusCher -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#coutePlusCher">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#neSePassePasDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#neSePassePasDans">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#requiert -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#requiert">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Adolescent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adolescent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Animation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Animation">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetAnimation"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageAnimé"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Education"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#pop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#joyeux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Education"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#serieux"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#classique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#classique"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#country"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#pop"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#reggae"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#rock"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Bide -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Bide">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Biographie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biographie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Biographie"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#BlockBuster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BlockBuster">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSucces"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosSuccès"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#rock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Budget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#-3M€"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#3-8M€"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#8M€+"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#But -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrophe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrophe">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#angoissant"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#futur"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#joyeux"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#pop"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#CourtMétrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#CourtMétrage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#-20min"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#DePrévention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#DePrévention">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#classique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Drame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Drame">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#triste"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Durée -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#EffetAnimation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetAnimation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenBudget"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageSurnaturel"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PlanSéquence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionIndépendant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Propagande"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#coutePlusCher"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#serieux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Format -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Format">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatNoirEtBlanc"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#FormatNoirEtBlanc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatNoirEtBlanc">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#coute"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#8M€+"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#GrosSuccès -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosSuccès">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Historique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Historique">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Education"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#serieux"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPublicCible"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte"/>
+                                </owl:unionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#angoissant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#LongMétrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#LongMétrage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#+50min"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Montage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#supA1"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#1"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aNombreDePrise"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#supA1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PlanSéquence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenBudget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenBudget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#coute"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#3-8M€"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenMétrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenMétrage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourDuree"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#20-50min"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Muet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Muet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatNoirEtBlanc"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#SonMuet"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Navet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Navet">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSucces"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Bide"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#reggae"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#joyeux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#SonMuet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageAnimé -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageAnimé">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#requiert"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetAnimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageSurnaturel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageSurnaturel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#requiert"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#coute"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#-3M€"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PlanSéquence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PlanSéquence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aNombreDePrise"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#1"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Production -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Production">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionIndépendant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionIndépendant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Propagande -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Propagande">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBudget"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#futur"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourEffetVisuel"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsSpéciaux"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourFormat"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#FormatCouleur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourMontage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#MontageClassique"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourSonorite"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Parlant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#produitPar"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#ProductionParSociété"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Son -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Son">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#SonMuet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#SonMuet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Succès -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Succès">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#classique"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourTon"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#angoissant"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Ton -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Western -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Western">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourGenreMusical"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#country"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#sePasseDans"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourBut"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#aPourPersonnage"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#naPasPourBudget"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#Époque -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#antiquite"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#futur"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#moyenAge"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#prehistoire"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#renaissance"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#angoissant -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#angoissant">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#antiquite -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#antiquite">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#classique -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#classique">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#country -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#country">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#futur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#futur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#joyeux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#joyeux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#moyenAge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#moyenAge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#pop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#pop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#prehistoire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#prehistoire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#reggae -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#reggae">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#renaissance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#renaissance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#rock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#rock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#serieux -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#serieux">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#supA1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#supA1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#triste -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#triste">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#+50min -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#+50min">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#-20min -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#-20min">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#-3M€ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#-3M€">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#20-50min -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#20-50min">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#3-8M€ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#3-8M€">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/cleme/ontologies/2022/film#8M€+ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#8M€+">
+        <rdf:type rdf:resource="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adolescent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Adulte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Enfant"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#JeuneAdulte"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonneAgee"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Animation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Apprentissage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biopic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BlockBuster"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Catastrophe"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Comédie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#DePrévention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Drame"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Fantastique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmAmateur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#FilmPolitique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Horreur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Muet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Navet"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#ScienceFiction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Thriller"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Western"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BandeOriginale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#EffetsVisuels"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Montage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Bide"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosSuccès"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Succès"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Biographie"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Divertissement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Education"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Prevention"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Propagande"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#BoxOffice"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#But"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Durée"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PublicCible"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Son"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Ton"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Époque"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Budget"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Format"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Production"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Caractéristiques"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Film"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Personnage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PostProduction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#Tournage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#CourtMétrage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#LongMétrage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenMétrage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#GrosBudget"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#MoyenBudget"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PetitBudget"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageAnimé"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageRéel"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#PersonnageSurnaturel"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#antiquite"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#contemporain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#futur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#moyenAge"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#prehistoire"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/cleme/ontologies/2022/film#renaissance"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
